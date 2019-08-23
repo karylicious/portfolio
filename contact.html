@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.scss">
+    <title>Carla Augusto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class ="nav-list">
+                <li>
+                    <a class="nav-links" href="./index.html"><i class="fas fa-home" style='font-size:24px;'></i></a>
+                </li>
+                <li>
+                    <a class="nav-links" href="./skills.html"><i class='fas fa-cog' style='font-size:24px'></i></a>
+                </li>
+                <li>
+                    <a class="nav-links" href="./projects.html"><i class='fas fa-briefcase' style='font-size:24px'></i></a>
+                </li>
+                <li>
+                    <a class="nav-links" href="./contact.html"><i class='fas fa-envelope' style='font-size:24px;'></i></a>
+                </li>
+                <li id="githubLink">
+                    <a class="nav-links" href="https://github.com/karylicious"><i class='fab fa-github' style='font-size:24px;'></i></a>
+                </li>
+                <li id="inLink">
+                    <a class="nav-links" href="https://www.linkedin.com/in/carla-augusto"><i class='fab fa-linkedin-in' style='font-size:24px;'></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main data-router-wrapper>
+        <section data-router-view="contact" class ="contact">
+            <div class="contact-content">
+                <div class="contact-presentation">                       
+                    <div class="column" style="background-color: #262626;">
+                        <h2>Contact me</h2>
+                        <form>
+                            <input type="text" name="fname" placeholder="Name">
+                            <input type="text" name="femail" placeholder="Email">
+                            <br/>
+                            <input type="text" name="fsubject" placeholder="Subject">
+                            <br/>
+                            <textarea name="fmessage" rows="7" cols="65" placeholder="Message"></textarea>
+                            <br/>
+                            <p><input type="submit" value="Send"></p>
+                        </form>
+                    </div>                        
+                    <div class="column" style="background-color:#303030;">   
+                        <div><img src="./imgs/carlaaugusto.jpg" alt="myself" width= 150px height= 150px></div>                                     
+                        Hi, my name is Carla Augusto. I'm a software developer with 2 years experience building web applications. I have completed my bachelor degree recently. With the combination of my theoretical knowlegde and skills, I am capable to turn ideas into reality.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
